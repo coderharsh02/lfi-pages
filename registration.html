@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        input[type=text],
+        select,
+        input[type=tel] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <div class="row">
+            <div class="col-25"> <label for="username">UserName</label> </div>
+            <div class="col-75"> <input type="text" id="username" name="username" placeholder="Your UserName.."> </div>
+        </div>
+        <div class="row">
+            <div class="col-25"> <label for="name">Name</label> </div>
+            <div class="col-75"> <input type="text" id="name" name="name" placeholder="Your Name.."> </div>
+        </div>
+        <div class="row">
+            <div class="col-25"> <label for="donorType">Donor Type</label> </div>
+            <div class="col-75"> <select id="donorType" name="donorType">
+                    <option value="">Select Donor Type</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Organization">Organization</option>
+                </select> </div>
+        </div>
+        <div class="row">
+            <div class="col-25"> <label for="volunteerType">Volunteer Type</label>
+            </div>
+            <div class="col-75">
+                <select id="volunteerType" name="volunteerType">
+                    <option value="">Select Volunteer Type</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Organization">Organization</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="address1">Address Line 1</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="address1" name="address1" placeholder="Your Address Line 1..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="address2">Address Line 2</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="address2" name="address2" placeholder="Your Address Line 2..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="city">City</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="city" name="city" placeholder="Your City..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="pincode">Pincode</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="pincode" name="pincode" placeholder="Your Pincode..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="phone">Phone Number</label>
+            </div>
+            <div class="col-75">
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number..">
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
